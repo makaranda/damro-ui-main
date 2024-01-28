@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        .container {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Adjust to maintain image aspect ratio and cover the entire container */
+        }
+
+        #custCarousel .carousel-indicators {
+            position: static;
+            margin-left: 20px; /* Adjust as needed */
+        }
+
+        #custCarousel .carousel-indicators > li {
+            width: 100px;
+            height: 100px; /* Adjust as needed */
+        }
+
+        #custCarousel .carousel-indicators li img {
+            display: block;
+            opacity: 0.5;
+        }
+
+        #custCarousel .carousel-indicators li.active img {
+            opacity: 1;
+        }
+
+        #custCarousel .carousel-indicators li:hover img {
+            opacity: 0.75;
+        }
+
+        .carousel-item img {
+            width: 100%; /* Change to 100% to cover the entire container */
+            height: auto;
+            margin: auto;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px; /* Adjust as needed */
+            height: 50px; /* Adjust as needed */
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            margin-left: 15px; /* Adjust as needed */
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            font-size: 24px; /* Adjust as needed */
+            color: #ffffff;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center vertically */
+            margin-top: 10px; /* Adjust as needed */
+        }
+
+        .thumbnails img {
+            width: 100px; /* Adjust as needed */
+            height: 75px; /* Adjust as needed */
+            margin-bottom: 5px; /* Adjust as needed */
+        }
+
+        @media only screen and (max-width: 764px) {
+  
+			.thumbnails {
+			  display: contents;
+			  flex-direction: inherit;
+			  align-items: center;
+			  margin-top: 10px;
+			}
+
+            .thumbnails img {
+			  width: 23%;
+			  height: 50px;
+			  margin-bottom: 5px;
+            }
+
+            .thumbnails {
+			  order: -1; /* Move thumbnails to the top */
+            }
+
+		}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+	
+        <div class="order-2 order-sm-1 order-md-1 col-md-3 col-lg-2 pt-2">
+            <div class="thumbnails">
+                <a id="carousel-selector-0" data-bs-slide-to="0" data-bs-target="#custCarousel">
+                    <img src="https://i.imgur.com/weXVL8M.jpg" class="img-fluid">
+                </a>
+                <a id="carousel-selector-1" data-bs-slide-to="1" data-bs-target="#custCarousel">
+                    <img src="https://i.imgur.com/Rpxx6wU.jpg" class="img-fluid">
+                </a>
+                <a id="carousel-selector-2" data-bs-slide-to="2" data-bs-target="#custCarousel">
+                    <img src="https://i.imgur.com/83fandJ.jpg" class="img-fluid">
+                </a>
+                <a id="carousel-selector-3" data-bs-slide-to="3" data-bs-target="#custCarousel">
+                    <img src="https://i.imgur.com/JiQ9Ppv.jpg" class="img-fluid">
+                </a>
+            </div>
+        </div>
+        <div class="order-1 order-sm-2 order-md-2 col-md-9 col-lg-10 pt-2">
+            <div id="custCarousel" class="carousel slide" data-bs-ride="carousel" align="center">
+                <!-- slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.imgur.com/weXVL8M.jpg" alt="Hills">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.imgur.com/Rpxx6wU.jpg" alt="Hills">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.imgur.com/83fandJ.jpg" alt="Hills">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.imgur.com/JiQ9Ppv.jpg" alt="Hills">
+                    </div>
+                </div>
+
+                <!-- Left right -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#custCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#custCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+		
+    </div>
+</div>
+
+</body>
+</html>
