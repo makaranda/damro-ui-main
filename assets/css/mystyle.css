@@ -232,7 +232,6 @@ section.navbar-header-main {
     color: #13b0a5;
   }
   
-
   .store-locator-nav button.active::after{
     content: "\f0dd";
     font-family: 'FontAwesome';
@@ -253,7 +252,6 @@ section.navbar-header-main {
     -webkit-transition: all 200ms ease 0s;
     -moz-transition: all 200ms ease 0s;
  }
-
   
   .btn-toggle-mobile{
     float: right;

@@ -1,5 +1,5 @@
 <?php
-    include('includes/header.php');
+include 'includes/header.php';
 ?>
 
 <div class="container mt-3 mb-5" id="main-page">
@@ -46,6 +46,7 @@
                                 </a>
                             </div>
                         </div>
+                        
                         <div class="order-1 order-sm-2 order-md-2 col-md-9 col-lg-9 pt-2 pl-0 pr-0">
                             <div id="custCarousel" class="carousel slide" data-bs-ride="carousel" align="center">
                                 <!-- slides -->
@@ -84,6 +85,7 @@
             <h4 class="product-inside-cash-price-new">Rs. <span class="product-price">75,400</span></h4>
             <p class="mb-3 text-justify">A pleasant sofa that brings simplicity to your living room. Beauty of the two tone touch and the ability to fit in to any limited spaced area provides great value with peace of mind.</p>
         </div>
+        
         <div class="col-12 col-md-12 mb-4">
             <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -196,5 +198,5 @@
 </div>
 
 <?php
-    include('includes/footer.php');
+    include 'includes/footer.php';
 ?>   
