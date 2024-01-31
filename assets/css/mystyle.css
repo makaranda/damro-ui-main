@@ -219,7 +219,7 @@ section.navbar-header-main {
     border-color: #128f86;
     color: #fff !important;
   }
-  
+
   .store-locator-nav button i.bi.bi-caret-down-fill {
     display: none;
   }
@@ -231,6 +231,7 @@ section.navbar-header-main {
     left: 34px;
     color: #13b0a5;
   }
+  
 
   .store-locator-nav button.active::after{
     content: "\f0dd";
