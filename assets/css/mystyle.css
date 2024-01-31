@@ -219,9 +219,11 @@ section.navbar-header-main {
     border-color: #128f86;
     color: #fff !important;
   }
+  
   .store-locator-nav button i.bi.bi-caret-down-fill {
     display: none;
   }
+
   .store-locator-nav button.active i.bi.bi-caret-down-fill {
     display: inline-block;
     position: relative;
@@ -271,7 +273,7 @@ section.navbar-header-main {
     padding: 2px 5px 5px 5px;
     top: 3px;
  }
- 
+
  .btn-close-area span{
     margin-right: 0px;
  }
